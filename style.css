@@ -265,7 +265,7 @@
 }
 
 /* MOBILE AND TABLET */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .container {
     font-size: 12px;
     padding: 1px;
