@@ -3,8 +3,8 @@
 }
 
 .container {
-  max-width: 1080px;
-  min-height: 100vh;
+  max-width: 800px;
+  max-height: 100vh;
   background-color: #f6f6f6;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
 }
+
 /*
 .start-button {
   position: fixed;
@@ -46,6 +47,7 @@
 .score span {
   font-size: 16px;
 }
+
 .main-head .user {
   flex: 1;
 }
@@ -262,48 +264,25 @@
   }
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  .main-info {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
-    padding: 12px;
-  }
-
-  .main-info .box .face {
-    border-width: 3px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
+/* MOBILE AND TABLET */
+@media (max-width: 800px) {
   .container {
-    padding: 10px;
+    font-size: 12px;
+    padding: 1px;
+    margin: auto;
   }
-
   .main-head {
-    padding: 12px;
-    margin: 10px auto;
-    font-size: 14px;
+    padding: 10px;
+    margin: 20px auto;
   }
-
   .main-head .user span,
-  .main-head .score span {
-    font-size: 13px;
+  .score span {
+    font-size: 12px;
   }
-
   .main-info {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 6px;
-    padding: 8px;
+    padding: 5px;
     margin: 10px auto;
-  }
-
-  .main-info .box .face {
-    border-width: 2px;
-  }
-
-  .main-info .box .front::after {
-    font-size: 55cqw;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 6px;
   }
 }
